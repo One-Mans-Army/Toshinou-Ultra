@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Избегать базы"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Сброс цели при прочности < 25%"
   },

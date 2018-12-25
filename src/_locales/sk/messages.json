@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Vyhívať sa klonovým staniciam"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Reštartovať ciel keď npc má HP < 25%"
   },

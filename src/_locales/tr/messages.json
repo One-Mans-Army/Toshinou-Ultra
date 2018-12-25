@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Savas istasyonunu esgec"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Can < 25% hedefi sifirla"
   },

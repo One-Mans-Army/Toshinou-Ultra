@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Απόφυγε το CBS"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Κάνε επαναφορά τον εχθρό όταν οι πόντοι ζωής < 25%"
   },

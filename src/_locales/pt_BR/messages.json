@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Esquivar-se das Bases"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Redefinir alvo quando a HP <25%"
   },

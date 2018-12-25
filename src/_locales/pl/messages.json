@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Unikaj stacji bojowej"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Resetuj target gdy NPC ma < 25% HP "
   },

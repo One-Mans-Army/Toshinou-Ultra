@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Vyh�bat se klanov�m stanic�m"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Zm�nit c�l, kdy� HP < 25%"
   },

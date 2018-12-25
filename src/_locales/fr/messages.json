@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Éviter les stations de combat de clan"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Réinitialiser la cible quand HP < 25%"
   },

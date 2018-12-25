@@ -158,6 +158,9 @@
   "dodgethecbs": {
     "message": "Esquivar Estación de Batalla"
   },
+  "repaironallycbs": {
+    "message": "Repair on ally CBS"
+  },
   "resettarget": {
     "message": "Restablecer el objetivo cuando la vida sea menor de 25%"
   },
