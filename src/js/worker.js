@@ -45,6 +45,8 @@ $(document).ready(function () {
 		warning.appendTo("body");
 		throw new Error("Safety tests failed!");
 	}
+
+
     preloader.appendTo($("#container"));
 
     window.settings = new Settings();
@@ -124,6 +126,9 @@ function init() {
 
 	window.shipSettings = new ShipSettings();
 	window.shipSettings.createWindow();
+
+    window.shipAbilityWindow = new ShipAbility();
+    window.shipAbilityWindow.createWindow();
 
 	window.statisticWindow = new StatisticWindow();
 	window.statisticWindow.createWindow();
@@ -322,8 +327,26 @@ function logic() {
 				return;
 			} else {
 				let gate = api.findNearestGate();
-				if (gate.gate) {
-					// This check is to to avoid unecessary movement spam while in gate.
+
+                if (api.battlestation != null && !api.battlestation.isEnemy &&
+                    window.settings.settings.repairOnAllyCbs &&
+                    MathUtils.percentFrom(window.hero.hp, window.hero.maxHp) > 10 &&
+                    api.battlestation.distanceTo(window.hero.position) <
+                                gate.gate.distanceTo(window.hero.position)) {
+
+                    // This check is to to avoid unnecessary movement spam while in cbs.
+                    if(api.battlestation.distanceTo(window.hero.position) > 200){
+                        api.resetTarget("all");
+                        let x = api.battlestation.position.x + MathUtils.random(-100, 100);
+                        let y = api.battlestation.position.y + MathUtils.random(-100, 100);
+                        api.move(x, y);
+                        window.movementDone = false;
+                        api.flyingMode();
+                        api.isRepairing = true;
+                        return;
+                    }
+                } else if (gate.gate) {
+					// This check is to to avoid unnecessary movement spam while in gate.
 					if(window.hero.position.distanceTo(gate.gate.position) > 200){
 						api.resetTarget("all");
 						let x = gate.gate.position.x + MathUtils.random(-100, 100);
@@ -474,6 +497,7 @@ function logic() {
 
 	if (window.settings.settings.palladium)
 		api.battlerayFix();
+
 
 	/*Dodge the CBS*/
 	if (window.settings.settings.dodgeTheCbs && api.battlestation != null) {

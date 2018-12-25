@@ -25,15 +25,6 @@ class ShipSettings{
             }
         },
         {
-            name: 'useAbility',
-            labelText: chrome.i18n.getMessage('useability'),
-            appendTo: this.shipSettingsWindow,
-            event: function () {
-                $(".ability").prop("disabled", !this.checked);
-                window.settings.settings.useAbility = this.checked;
-            }
-        },
-        {
             name: 'autoCamouflage',
             labelText: "Auto camo",
             appendTo: this.shipSettingsWindow,
@@ -96,20 +87,6 @@ class ShipSettings{
             },
             event: function () {
                 window.settings.settings.flyingFormation = this.value;
-            }
-        },
-        {
-            name: 'abilitySlot',
-            labelText: chrome.i18n.getMessage('abilityslot'),
-            type: "select",
-            disabled: true && !window.settings.settings.useAbility,
-            appendTo: this.shipSettingsWindow,
-            options: {"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9},
-            attrs:{
-                class: "ability"
-            },
-            event: function () {
-                window.settings.settings.abilitySlot = this.value;
             }
         },
         {

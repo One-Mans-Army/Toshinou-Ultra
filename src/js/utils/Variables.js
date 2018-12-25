@@ -1,110 +1,110 @@
 class Variables {
 
-	static get boxType() {
-		return "_-O3e";
-	}
-	
 	static get assetCreateX() {
-		return "_-s2H";
+		return "_-GX";
 	}
 	
 	static get assetCreateY() {
-		return "_-rF";
+		return "_-XE";
+	}
+	
+	static get boxType() {
+		return "_-E3P";
 	}
 	
 	static get gateId() {
-		return "_-z4Q";
+		return "_-I4b";
 	}
 	
 	static get gateType() {
-		return "_-15D";
+		return "_-B43";
 	}
 	
 	static get attackerId() {
-		return "_-g3t";
+		return "_-42Z";
 	}
 	
 	static get heroAttackedId() {
-		return "_-c1m";
+		return "_-a1G";
 	}
 	
 	static get attackHp() {
-		return "_-kw";
+		return "_-uT";
 	}
 	
 	static get attackShd() {
-		return "_-MV";
+		return "_-b3O";
 	}
 	
 	static get heroInitMaxHp() {
-		return "_-ps";
+		return "_-P4u";
 	}
 	
 	static get heroInitMaxShd() {
-		return "_-d1d";
+		return "_-74w";
 	}
 	
 	static get heroInitHp() {
-		return "_-214";
+		return "_-V2v";
 	}
 	
 	static get heroPetId() {
-		return "_-X25";
+		return "_-643";
 	}
 	
 	static get hpUpdateMaxHp() {
-		return "_-B1D";
+		return "_-C4l";
 	}
 	
 	static get hpUpdateHp() {
-		return "_-61I";
+		return "_-65u";
 	}
 	
 	static get heroUpdateShd() {
-		return "_-258";
+		return "_-l30";
 	}
 	
 	static get resource() {
-		return "_-Xq";
+		return "_-22G";
 	}
 	
 	static get attackerId() {
-		return "_-g3t";
+		return "_-42Z";
 	}
 	
 	static get attackedId() {
-		return "_-Nu";
+		return "_-O27";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-84y";
+		return "_-5w";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-u4x";
+		return "_-h24";
 	}
 	
 	static get moveDuration() {
-		return "_-6g";
+		return "_-E3O";
 	}
 	
 	static get selectMaxHp() {
-		return "_-B1D";
+		return "_-C4l";
 	}
 	
 	static get selectMaxShd() {
-		return "_-d1d";
+		return "_-74w";
 	}
 	
 	static get selectHp() {
-		return "_-61I";
-	}
+		return "_-65u";
+	}	
 			
 	static get resourceType() {
-		return "_-e3n";
+		return "_-O3f";
 	}
 
 	static get battlestationClanDiplomacy() {
-		return "_-G2i"; 
+		return "_-Y2D"; 
 	}
 }

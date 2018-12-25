@@ -67,6 +67,14 @@ class GeneralSettingsWindow {
 		}
 	},
 	{
+		name: 'repairOnAllyCbs',
+		labelText: chrome.i18n.getMessage("repaironallycbs"),
+		appendTo: this.botSettingsWindow,
+		event: function () {
+			window.settings.settings.repairOnAllyCbs = this.checked;
+		}
+	},
+	{
 		name: 'avoidAttackedNpcs',
 		labelText: chrome.i18n.getMessage("avoidattackednpc"),
 		appendTo: this.botSettingsWindow,

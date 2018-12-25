@@ -248,6 +248,9 @@
   "abilityslot": {
     "message": "Ability slot"
   },
+  "useabilitywhenhporshd": {
+    "message": "Use escape ability when HP or SHD <span> (75%)</span> <h6>Only for (Spectrum, Sentinel, V-Lightning)</h6>"
+  },
   "camouflageslot": {
     "message": "Camouflage slot: "
   },

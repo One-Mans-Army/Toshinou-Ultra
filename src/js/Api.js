@@ -78,7 +78,7 @@ class Api {
 	}
 
 	useAbility(){
-		var cooldownlist = {"cyborg":310000,"solace":140000,"diminisher":161000,"venom":180000,"sentinel":215000,"spectrum":195000,"v-lightning":185000};
+		var cooldownlist = {"cyborg":310000,"solace":91000,"diminisher":106000,"venom":156000,"sentinel":216000,"spectrum":196000,"v-lightning":186000};
 		if(this.abilityCoolDown && $.now() - this.abilityCoolDown > cooldownlist[window.hero.skillName]){
 			this.quickSlot(window.settings.settings.abilitySlot);
 			this.abilityCoolDown = $.now();
@@ -496,7 +496,7 @@ class Api {
                 // Excludes shield factor if there's no shield on the configuration
                 if (isNaN(shdPercent))
                     shdPercent = 100;
-                if (Math.min(hpPercent, shdPercent) < window.settings.settings.repairWhenHpIsLowerThanPercent)
+                if (Math.min(hpPercent, shdPercent) < window.settings.settings.useAbilityWhenHpOrShdIsLowerThanPercent)
                     api.useAbility();
             }
 			if(window.settings.settings.jumpFromEnemy && !window.stayInPortal){

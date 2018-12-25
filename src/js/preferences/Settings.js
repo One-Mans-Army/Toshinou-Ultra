@@ -14,6 +14,7 @@ class Settings {
       dontCircleWhenHpBelow25Percent: false,
       resetTargetWhenHpBelow25Percent: false,
       repairWhenHpIsLowerThanPercent: 30,
+      useAbilityWhenHpOrShdIsLowerThanPercent: 75,
       ggbot: false,
       alpha: false,
       beta: false,
