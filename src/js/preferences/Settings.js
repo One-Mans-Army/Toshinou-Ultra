@@ -63,7 +63,6 @@ class Settings {
       petReviveLimit: 10
     };
     chrome.storage.local.get(this.defaults, items => {
-      console.log(items);
       this.settings = items;
     });
   }
