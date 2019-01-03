@@ -53,6 +53,7 @@
         "js/windows/AutolockWindow.js",
         "js/windows/CollectionWindow.js",
         "js/windows/ShipSettings.js",
+        "js/windows/ShipAbility.js",
         "js/objects/Movable.js",
         "js/objects/Box.js",
         "js/objects/Hero.js",
